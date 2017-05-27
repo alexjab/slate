@@ -23,32 +23,33 @@ under the License.
 
 // BACKGROUND COLORS
 ////////////////////
-$nav-bg: #393939 !default;
-$examples-bg: #393939 !default;
-$code-bg: #292929 !default;
-$code-annotation-bg: #1c1c1c !default;
-$nav-subitem-bg: #262626 !default;
-$nav-active-bg: #2467af !default;
-$lang-select-border: #000 !default;
-$lang-select-bg: #222 !default;
-$lang-select-active-bg: $examples-bg !default; // feel free to change this to blue or something
-$lang-select-pressed-bg: #111 !default; // color of language tab bg when mouse is pressed
-$main-bg: #eaf2f6 !default;
-$aside-notice-bg: #8fbcd4 !default;
-$aside-warning-bg: #c97a7e !default;
-$aside-success-bg: #6ac174 !default;
-$search-notice-bg: #c97a7e !default;
+$dark-bg: #313337 !default;
+$darker-bg: #25272b !default;
+$light-bg: white !default;
+$grey-dark: #333;
+$grey: #666;
 
+$light-text: white !default;
+$dark-text: $grey-dark !default;
 
-// TEXT COLORS
-////////////////////
-$main-text: #333 !default; // main content text color
-$nav-text: #fff !default;
-$nav-active-text: #fff !default;
-$lang-select-text: #fff !default; // color of unselected language tab text
-$lang-select-active-text: #fff !default; // color of selected language tab text
-$lang-select-pressed-text: #fff !default; // color of language tab text when mouse is pressed
+$blue: #0588ff !default;
 
+$nav-text: $light-text !default;
+$nav-bg: $dark-bg !default;
+$nav-active-text: $light-text !default;
+
+$nav-search-results-bg: $darker-bg !default;
+$nav-search-border-color: $grey !default;
+$nav-subitem-bg: $darker-bg !default;
+$nav-active-bg: $blue !default;
+$nav-footer-border-color: $grey !default;
+
+$notice-info-bg: #8fbcd4 !default;
+$notice-success-bg: #6ac174 !default;
+$notice-warning-bg: #c97a7e !default;
+
+$lang-button-bg: $dark-bg !default; 
+$lang-button-border: $dark-bg !default; 
 
 // SIZES
 ////////////////////
@@ -82,22 +83,6 @@ $phone-width: $tablet-width - $nav-width !default; // min width before reverting
   font-size: 12px;
   line-height: 1.5;
 }
-
-
-// OTHER
-////////////////////
-$nav-active-shadow: #000 !default;
-$nav-footer-border-color: #666 !default;
-$nav-embossed-border-top: #000 !default;
-$nav-embossed-border-bottom: #939393 !default;
-$main-embossed-text-shadow: 0px 1px 0px #fff !default;
-$search-box-border-color: #666 !default;
-
-
-////////////////////////////////////////////////////////////////////////////////
-// INTERNAL
-////////////////////////////////////////////////////////////////////////////////
-// These settings are probably best left alone.
 
 %break-words {
     word-break: break-all;
